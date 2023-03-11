@@ -1,0 +1,591 @@
+*,
+html,
+body {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+html,
+body {
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------- Navigation  Bar -------------------------------*/
+
+@media only screen and (max-width:1200px) {
+    .header .upstox-logo .Vector-Smart-Object {
+        padding-left: 0 !important;
+    }
+
+
+    .header .nav-links {
+        left: 10vw !important;
+    }
+
+    .header .nav-links li {
+        margin-right: 15px !important;
+    }
+
+    .header .links>.sign-in {
+        padding: 10px 10px !important;
+        margin: 20px 15px 20px 10px !important;
+    }
+
+    .header .links>.create-account {
+        padding: 10px 7px !important;
+    }
+}
+
+@media only screen and (max-width:1080px) {
+    .header .right-bar .search-background #navbar-search {
+        width: 190px !important;
+        padding: 12px 0px 12px 30px !important;
+        font-size: 11px !important;
+    }
+
+    .header .nav-links {
+        left: 11vw !important;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .header .nav-links {
+        display: none !important;
+    }
+
+    .header .right-bar {
+        display: none !important;
+    }
+
+    .header .hidden-elements {
+        display: flex !important;
+        position: absolute;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .header .hidden-elements .responsive-search-button {
+        background-color: white;
+        border: none;
+        padding-right: 40px;
+        font-size: 25px !important;
+        font-weight: 100;
+    }
+
+    .header .hidden-elements .navbar-menu-button div {
+        width: 22px !important;
+        height: 2px !important;
+        background-color: #333 !important;
+        margin: 6px 0 !important;
+
+    }
+
+    .header .hidden-elements .navbar-menu-button {
+        background-color: white !important;
+        border: none;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .header .hidden-elements .navbar-menu-button-middle-div {
+        transform: translate(7px);
+    }
+}
+
+.header {
+    box-shadow: 0px 1px 20px 0px #E9E9EB;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .upstox-logo .Vector-Smart-Object {
+    padding-left: 10px;
+    position: relative;
+}
+
+.header .hidden-elements {
+    display: none;
+}
+
+.header .left-bar,
+.right-bar,
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .right-bar {
+    position: absolute;
+    right: 0;
+}
+
+
+.header .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    margin-right: 18px;
+    font-size: 14px;
+}
+
+.nav-links {
+    position: absolute;
+    top: 33px;
+    left: 11.5vw;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.header .right-bar .search-background .icon {
+    position: absolute;
+    padding: 10px;
+}
+
+.header .right-bar .search-background #navbar-search {
+    width: 250px;
+    padding: 10px 0px 10px 40px;
+    text-align: left;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+}
+
+.header .right-bar .search-background {
+    position: relative;
+}
+
+.header a:hover,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.header .sign-in>a:hover,
+.sign-in>a:link,
+.sign-in>a:visited,
+.sign-in>a:active {
+    color: #43165c;
+}
+
+.header .nav-button-links a {
+    text-align: center;
+    
+}
+
+.header .nav-button-links {
+    align-items: center;    
+}
+
+.header .links>.create-account {
+    margin: 15px 5px 20px 15px;
+    padding: 10px 10px;
+    background-color: #43165c;
+    width: 120px;
+    border-radius: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header .links>.sign-in {
+    margin: 20px 30px 20px 10px;
+    padding: 10px 20px;
+    border: 1.5px solid #43165c;
+    width: 50px;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* ------------------------------- Navigation  Bar -------------------------------*/
+
+/* ------------------------------- Home Banner Section -------------------------------*/
+
+@media screen and (max-width: 1200px) {
+    .dark-banner .banner-heading-section h1 {
+        font-size: 55px !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage .owl-item img{
+        width: 512px !important;
+        height: 500px !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage-outer {
+        width: 512px !important;
+        height: 464px !important;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .dark-banner .banner-right-section .owl-stage .owl-item img{
+        width: 461px !important;
+        height: 450px !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage-outer {
+        width: 461px !important;
+        height: 418px !important;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .dark-banner .banner-right-section .owl-stage .owl-item img{
+        width: 415px !important;
+        height: 405px !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage-outer {
+        width: 415px !important;
+        height: 377px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dark-banner .home-banner-section {
+        background: radial-gradient(circle at center right, #fff 29%, rgba(58, 132, 58, 0) 70%), radial-gradient(circle at center right, #fff 18%, rgba(58, 132, 58, 0) 46%), radial-gradient(ellipse at bottom center, #8941f9 18%, rgba(137, 65, 246, .5) 29%, rgba(137, 65, 246, 0) 87%), radial-gradient(ellipse at bottom center, #8941f6 18%, rgba(137, 65, 246, .5) 31%, rgba(137, 65, 246, 0) 62%), linear-gradient(135deg, #1e0b3c 30%, rgba(30, 11, 60, 0));
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .dark-banner .home-banner-section {
+        background-image: url('https://upstox.com/app/themes/upstox/dist/img/home/new-banner/dark-mobile-bg.svg');
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    .dark-banner .banner-heading-section h1 {
+        font-size: 44px !important;
+        font-weight: 600 !important;
+        line-height: 1.1 !important;
+        text-align: left !important;
+    }
+
+    .dark-banner .banner_heading_section_list ul {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dark-banner .banner_heading_section_list ul li {
+        border-right: none !important;
+        border-bottom: 1px solid white !important;
+        padding: 8px 0 !important;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0;
+        text-align: left;
+    }
+
+    .dark-banner .banner_heading_section_list {
+        padding-top: 10px !important;
+    }
+
+    .dark-banner .home-banner {
+        padding: 0 15px !important;
+    }
+
+    .dark-banner .banner-left-section {
+        padding-top: 20px !important;
+    }
+
+    .dark-banner .banner-form-section {
+        display: none !important;
+    }
+
+    .dark-banner .banner-price-section {
+        display: none !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage .owl-item img{
+        width: 519px !important;
+        height: 507px !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage-outer {
+        width: 519px !important;
+        height: 470px !important;
+    }
+
+}
+
+main.upstox-design-base :not(i) {
+    font-family: Inter !important;
+}
+
+.dark-banner {
+    margin-top: 85px;
+}
+
+.dark-banner .home-banner {
+    max-width: 1392px;
+    margin-inline: auto;
+    padding-inline: 30px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.dark-banner .desktop-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dark-banner .banner-left-section {
+    padding-top: 60px;
+}
+
+.dark-banner .banner-heading-section h1 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: white;
+    letter-spacing: -.05em;
+    text-transform: capitalize;
+}
+
+.dark-banner .banner_heading_section_list {
+    padding-top: 20px;
+}
+
+.dark-banner .banner_heading_section_list li:first-child {
+    padding-left: 0px;
+}
+
+.dark-banner .banner_heading_section_list li:last-child {
+    border-right: none;
+}
+
+.dark-banner .banner_heading_section_list ul li {
+    display: inline-block;
+    list-style: none;
+    border-right: 1px solid white;
+    padding: 0 22px;
+}
+
+.dark-banner .banner-form-section {
+    padding-top: 32px;
+    max-width: 467px;
+    width: 100%;
+}
+
+.dark-banner .banner-form-section .input_form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 52px;
+    padding: 8px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    background: #fff;
+}
+
+.dark-banner .banner-form-section .input_form .country-code {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -.03em;
+    text-align: left;
+    color: #000;
+    padding-left: 8px;
+    padding-right: 6px;
+}
+
+.dark-banner .banner-form-section .input_form .txtContact {
+    background-color: white;
+    border: none;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -.03em;
+    text-align: left;
+    color: #444;
+    outline: none;
+    width: 100%;
+}
+
+.dark-banner .banner-form-section .input_form .banner-form-button {
+    background: #2c0d5b;
+    border-radius: 12px;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-banner .banner-form-section .banner-form-info {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -.03em;
+    padding-inline: 8px;
+}
+
+.dark-banner .banner-price-section {
+    margin-top: 48px;
+}
+
+.dark-banner .banner-price-section .banner-price-boxes {
+    display: flex;
+}
+
+.dark-banner .banner-price-section .banner_price_box {
+    border-radius: 4px;
+    margin-right: 16px;
+    padding: 16px;
+    border-left: 8px solid #77cece;
+    background: rgba(0, 0, 0, .5);
+}
+
+.dark-banner .banner-price-section .banner_price_box .price-info {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.dark-banner .banner-price-section .banner_price_box .heading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.dark-banner .banner-price-section .banner_price_box .price-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: hsla(0, 0%, 100%, .75);
+}
+
+.dark-banner .banner-price-section .banner-rating-section {
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+}
+
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details {
+    border-right: 1px solid #fff;
+    padding: 0 16px;
+}
+
+.dark-banner .banner-price-section .banner-rating-section div:last-child{
+    border-right: none;
+}
+
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-details-info {
+    display: flex;
+    align-items: center;
+}
+
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-details-info .banner-rating-details-heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-info {
+    margin-top: 8px;
+}
+
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-info > h6{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #fff;
+}
+
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-details-info > img{
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    margin-left: 8px;
+}
+
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-details-info .tiger-global-img > img{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    line-height: 0;
+    color: #545456;
+    margin-left: 8px;
+}
+
+.dark-banner .banner-right-section .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dark-banner .banner-right-section .slider-container .owl-dots div {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #D6D6D6;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    line-height: 25px;
+}
+  
+.dark-banner .banner-right-section .slider-container .owl-dots div.active {
+    background-color: black;
+}
+
+.dark-banner .banner-right-section .owl-stage-outer {
+    width: 640px;
+    height: 580px;
+    overflow: hidden;
+}
+
+.dark-banner .banner-right-section .owl-stage .owl-item {
+    display: none;
+}
+
+.dark-banner .banner-right-section .owl-stage .owl-item.active {
+    display: block;
+}
+
+.dark-banner .banner-right-section .owl-stage .owl-item img{
+    width: 640px;
+    height: 624px;
+}
