@@ -187,11 +187,11 @@ a:active {
 
 .header .nav-button-links a {
     text-align: center;
-    
+
 }
 
 .header .nav-button-links {
-    align-items: center;    
+    align-items: center;
 }
 
 .header .links>.create-account {
@@ -224,7 +224,7 @@ a:active {
         font-size: 55px !important;
     }
 
-    .dark-banner .banner-right-section .owl-stage .owl-item img{
+    .dark-banner .banner-right-section .owl-stage .owl-item img {
         width: 512px !important;
         height: 500px !important;
     }
@@ -236,7 +236,7 @@ a:active {
 }
 
 @media screen and (max-width: 1080px) {
-    .dark-banner .banner-right-section .owl-stage .owl-item img{
+    .dark-banner .banner-right-section .owl-stage .owl-item img {
         width: 461px !important;
         height: 450px !important;
     }
@@ -248,7 +248,7 @@ a:active {
 }
 
 @media screen and (max-width: 890px) {
-    .dark-banner .banner-right-section .owl-stage .owl-item img{
+    .dark-banner .banner-right-section .owl-stage .owl-item img {
         width: 415px !important;
         height: 405px !important;
     }
@@ -318,14 +318,49 @@ a:active {
         display: none !important;
     }
 
-    .dark-banner .banner-right-section .owl-stage .owl-item img{
-        width: 519px !important;
+    .dark-banner .banner-price-section-mobile-section {
+        display: block !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage .owl-item img {
+        width: 480px !important;
         height: 507px !important;
     }
 
     .dark-banner .banner-right-section .owl-stage-outer {
-        width: 519px !important;
+        width: 400px !important;
         height: 470px !important;
+    }
+
+    .dark-banner .banner-form-section-mobile-view {
+        display: block !important;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+
+    .dark-banner .banner-right-section .owl-stage .owl-item img {
+        width: 432px !important;
+        height: 457px !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage-outer {
+        width: 360px !important;
+        height: 423px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .dark-banner .banner-right-section .owl-stage .owl-item img {
+        width: 360px !important;
+        height: 380px !important;
+    }
+
+    .dark-banner .banner-right-section .owl-stage-outer {
+        width: 298px !important;
+        height: 352px !important;
     }
 
 }
@@ -336,6 +371,7 @@ main.upstox-design-base :not(i) {
 
 .dark-banner {
     margin-top: 85px;
+    margin-bottom: ;
 }
 
 .dark-banner .home-banner {
@@ -352,6 +388,9 @@ main.upstox-design-base :not(i) {
 }
 
 .dark-banner .banner-left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-top: 60px;
 }
 
@@ -378,7 +417,7 @@ main.upstox-design-base :not(i) {
 
 .dark-banner .banner_heading_section_list ul li {
     display: inline-block;
-    list-style: none;
+    list-style-type: none;
     border-right: 1px solid white;
     padding: 0 22px;
 }
@@ -493,6 +532,7 @@ main.upstox-design-base :not(i) {
     display: flex;
     margin-top: 32px;
     align-items: center;
+    padding-bottom: 70px;
 }
 
 .dark-banner .banner-price-section .banner-rating-section .banner-rating-details {
@@ -500,7 +540,7 @@ main.upstox-design-base :not(i) {
     padding: 0 16px;
 }
 
-.dark-banner .banner-price-section .banner-rating-section div:last-child{
+.dark-banner .banner-price-section .banner-rating-section div:last-child {
     border-right: none;
 }
 
@@ -523,7 +563,7 @@ main.upstox-design-base :not(i) {
     margin-top: 8px;
 }
 
-.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-info > h6{
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-info>h6 {
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
@@ -532,7 +572,7 @@ main.upstox-design-base :not(i) {
     color: #fff;
 }
 
-.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-details-info > img{
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-details-info>img {
     width: 24px;
     min-width: 24px;
     height: 24px;
@@ -540,7 +580,7 @@ main.upstox-design-base :not(i) {
     margin-left: 8px;
 }
 
-.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-details-info .tiger-global-img > img{
+.dark-banner .banner-price-section .banner-rating-section .banner-rating-details .banner-rating-details-info .tiger-global-img>img {
     background-color: #fff;
     padding: 8px;
     border-radius: 4px;
@@ -566,7 +606,7 @@ main.upstox-design-base :not(i) {
     transition: background-color 0.6s ease;
     line-height: 25px;
 }
-  
+
 .dark-banner .banner-right-section .slider-container .owl-dots div.active {
     background-color: black;
 }
@@ -585,7 +625,228 @@ main.upstox-design-base :not(i) {
     display: block;
 }
 
-.dark-banner .banner-right-section .owl-stage .owl-item img{
+.dark-banner .banner-right-section .owl-stage .owl-item img {
     width: 640px;
     height: 624px;
 }
+
+.dark-banner .banner-form-section-mobile-view {
+    display: none;
+    padding-top: 50px;
+    max-width: 467px;
+    width: 90%;
+    padding-bottom: 60px;
+}
+
+.dark-banner .banner-form-section-mobile-view .input_form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    background: #fff;
+}
+
+.dark-banner .banner-form-section-mobile-view .input_form .country-code {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -.03em;
+    text-align: left;
+    color: #000;
+    padding-left: 8px;
+    padding-right: 6px;
+}
+
+.dark-banner .banner-form-section-mobile-view .input_form .txtContact {
+    background-color: white;
+    border: none;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -.03em;
+    text-align: left;
+    color: #444;
+    outline: none;
+    width: 100%;
+}
+
+.dark-banner .banner-form-section-mobile-view .input_form .banner-form-button {
+    background: #2c0d5b;
+    border-radius: 12px;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-banner .banner-form-section-mobile-view .banner-form-info {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -.03em;
+    padding-inline: 8px;
+}
+
+.dark-banner .banner-price-section-mobile-section {
+    display: none;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-price-boxes {
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid black;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner_price_box:not(:last-child) {
+    flex: 0 0 45%;
+    max-width: 45%;
+    border-right: 1px solid #e5e5e5;
+    border-radius: 5%;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner_price_box {
+    padding: 16px;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner_price_box .price-info {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+    color: black;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner_price_box .heading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner_price_box .price-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: rgba(0,0,0,.75);
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .first-two-banner-rating-section{
+    display: flex;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 16px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .first-two-banner-rating-section{
+    border-right: none;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .first-two-banner-rating-section>* {
+    flex: 0 1 50%;
+    max-width: 50%;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details:first-child {
+    border-right: 1px solid #e5e5e5;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details.last-div:last-child {
+    border-right: none;
+    flex: 0 1 100%;
+    max-width: 100%;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details.last-div:last-child>* {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details .banner-rating-details-info {
+    display: flex;
+    align-items: center;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details .banner-rating-details-info .banner-rating-details-heading {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    white-space: nowrap;
+    color: black;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details .banner-rating-info>h6 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    color: black;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details .banner-rating-details-info>img {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    min-height: 16px;
+    margin-left: 8px;
+}
+
+.dark-banner .banner-price-section-mobile-section .banner-rating-section .banner-rating-details .banner-rating-details-info .tiger-global-img>img {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    line-height: 0;
+    color: black;
+    margin-left: 8px;
+}
+
+
+/* ------------------------------- Home Banner Section -------------------------------*/
+
+.product-tabs {
+    margin-top: 130px;
+}
+
+.product-tabs .section_heading {
+    text-align: center;
+}
+
+.product-tabs .section_heading h5{
+    color: #db542a;
+    margin-bottom: 15px;
+}
+
+.product-tabs .section_heading h1{
+    color: #000;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -.69px;
+}
+
