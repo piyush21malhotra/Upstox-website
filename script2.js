@@ -1,3 +1,31 @@
+// ------------------- Product Slides ---------------------
+
+const product_slides = document.querySelector(".product_description_section").children;
+const product_slides_indicator = document.querySelector(".products_heading_section").children;
+let productIndex = 0;
+
+function updateSlideIndicator() {
+    for (let i = 0; i < product_slides_indicator.length; i++) {
+        product_slides_indicator[i].classList.remove("active");
+    }
+    product_slides_indicator[productIndex].classList.add("active");
+}
+
+function changeProductSlide() {
+    for (let i = 0; i < product_slides.length; i++) {
+        product_slides[i].classList.remove("active");
+    }
+
+    product_slides[productIndex].classList.add("active");
+}
+
+function indicateProductSlide(index) {
+    productIndex = index;
+    changeProductSlide();
+    updateSlideIndicator();
+}
+
+
 const slides = document.querySelector(".owl-stage").children;
 const indicator = document.querySelector(".owl-dots");
 let index = 0;
