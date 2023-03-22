@@ -878,7 +878,7 @@ main.upstox-design-base :not(i) {
 }
 
 .product-tabs {
-    padding-top: 130px;
+    padding: calc(96px + 84 * ((100vw - 576px) / 1344)) 0;
 }
 
 .product-tabs .container {
@@ -940,6 +940,18 @@ main.upstox-design-base :not(i) {
     padding-top: 90px;
     display: none;
     width: 100%;
+    animation: show-slide .9s ease;
+    margin-bottom: 75px;
+}
+
+@keyframes show-slide {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .product-tabs .product-rows .product-slides .slides.active {
@@ -992,4 +1004,220 @@ main.upstox-design-base :not(i) {
     letter-spacing: -.09px;
     border: none;
     margin-top: 40px;
+}
+
+/* -------------- Pricing Tree Section --------------- */
+
+@media (max-width: 577px) {
+    .button-group-sec .container .button-group {
+        flex-direction: column;
+        margin-left: 10px !important;
+    }
+
+    .button-group-sec .container {
+        margin-top: 16px !important;
+    }
+
+    .button-group-sec .container .button-group > a{
+        margin: 4px 0px !important;
+        padding: 16px 0px !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    .button-group-sec .container .button-group{
+        width: 95% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing-tree-section .container .heading-row .right-row-img {
+        display: none !important;
+    }
+
+    .pricing-tree-section .container .heading-row .left-row h3 {
+        font-size: 32px !important;
+        line-height: 40px !important;
+        letter-spacing: -.69px !important;
+    }
+
+    .pricing-tree-section {
+        border-radius: 0 !important;
+        padding: 32px 0 !important;
+    }
+
+    .pricing-tree-section .container .price-row .banner-price-boxes {
+        margin: 60px 0 35px !important;
+    }
+
+
+    .pricing-tree-section .container .price-row .banner-price-boxes .banner_price_box {
+        flex: inherit !important;
+        margin: 0 0 25px !important;
+        width: 45%;
+        padding: 0 8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pricing-tree-section .container .heading-row {
+        width: 65% !important;
+    }
+
+    .button-group-sec .container {
+        width: 750px !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .pricing-tree-section .container .heading-row .right-row-img {
+        width: 33.33333333%;
+    }
+
+    .pricing-tree-section .container .heading-row .right-row-img img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .button-group-sec .container {
+        width: 960px !important;
+    }
+}
+
+@media (min-width: 1080px) {
+    .pricing-tree-section .container {
+        max-width: 1080px !important;
+    }
+}
+
+.pricing-tree-section {
+    max-width: 840px;
+    margin: 0 auto;
+    background-color: #41246e;
+    border-radius: 16px;
+    padding: 85px 60px;
+    position: relative;
+}
+
+.pricing-tree-section .container {
+    padding: 15px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pricing-tree-section .container .heading-row .left-row h3 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.07px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.pricing-tree-section .container .heading-row .right-row-img {
+    position: absolute;
+    right: 40px;
+    top: -75px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pricing-tree-section .container .price-row .banner-price-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px 0 100px;
+}
+
+.pricing-tree-section .container .price-row .banner-price-boxes .banner_price_box {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.pricing-tree-section .container .price-row .banner-price-boxes .banner_price_box .price-info {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 900;
+    color: #fff;
+    width: fit-content;
+    text-align: left;
+}
+
+.pricing-tree-section .container .price-row .banner-price-boxes .banner_price_box .price-info span {
+    font-size: 33.52px;
+    line-height: 41px;
+    font-weight: 900;
+    color: #fff;
+    margin-right: -10px;
+}
+
+.pricing-tree-section .container .price-row .banner-price-boxes .banner_price_box .heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin: 10px 0;
+    letter-spacing: -.09px;
+}
+
+.pricing-tree-section .container .price-row .banner-price-boxes .banner_price_box .price-text {
+    font-size: 14px;
+    letter-spacing: -.09px;
+    color: #fff;
+}
+
+.pricing-tree-section .container .button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-tree-section .container .button-row .button a {
+    background: #fff;
+    border-radius: 40px;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    min-width: 155px;
+    line-height: 20px;
+    color: #41246e;
+    letter-spacing: -.09px;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+.pricing-tree-section .container .button-row .terms-condition p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button-group-sec {
+    margin-top: 32px;
+}
+
+.button-group-sec .container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group-sec .container .button-group {
+    display: flex;
+    justify-content: center;
+}
+
+.button-group-sec .container .button-group>a {
+    margin: 0px 8px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #41246e;
+    color: #41246e;
+    font-weight: 500;
+    border-radius: 40px;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 14px;
+    min-width: 155px;
+    line-height: 20px;
+    letter-spacing: -.09px;
 }
