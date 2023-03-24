@@ -837,7 +837,7 @@ main.upstox-design-base :not(i) {
 }
 
 @media screen and (min-width: 767px) {
-    .product-tabs .section_heading {
+    .common_section_heading .section_heading {
         text-align: center;
     }
 }
@@ -889,21 +889,22 @@ main.upstox-design-base :not(i) {
     padding-left: 15px;
 }
 
-.product-tabs .section_heading h5 {
+.common_section_heading .section_heading {
+    padding-bottom: 60px;
+}
+
+.common_section_heading .section_heading h5 {
     color: #db542a;
     margin-bottom: 15px;
 }
 
-.product-tabs .section_heading h1 {
+.common_section_heading .section_heading h1 {
     color: #000;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -.69px;
 }
 
-.product-tabs .product-rows {
-    padding-top: 55px;
-}
 
 .product-tabs .product-rows .products_heading_section .product {
     align-items: center;
@@ -1006,7 +1007,9 @@ main.upstox-design-base :not(i) {
     margin-top: 40px;
 }
 
-/* -------------- Pricing Tree Section --------------- */
+/* -------------------------------------------------------------------------------------------------------
+                                              Pricing Tree Section 
+--------------------------------------------------------------------------------------------------------- */
 
 @media (max-width: 577px) {
     .button-group-sec .container .button-group {
@@ -1014,18 +1017,18 @@ main.upstox-design-base :not(i) {
         margin-left: 10px !important;
     }
 
-    .button-group-sec .container {
+    .button-group-sec {
         margin-top: 16px !important;
     }
 
-    .button-group-sec .container .button-group > a{
+    .button-group-sec .container .button-group>a {
         margin: 4px 0px !important;
         padding: 16px 0px !important;
         font-size: 16px !important;
         line-height: 20px !important;
     }
 
-    .button-group-sec .container .button-group{
+    .button-group-sec .container .button-group {
         width: 95% !important;
     }
 }
@@ -1219,5 +1222,320 @@ main.upstox-design-base :not(i) {
     font-size: 14px;
     min-width: 155px;
     line-height: 20px;
+    letter-spacing: -.09px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------
+                                              Benifits Section 
+--------------------------------------------------------------------------------------------------------- */
+
+
+@media (min-width: 992px) {
+    .benifits-section .container .row .benifit-card-outer {
+        width: 50%;
+    }
+
+    .benifits-section {
+        width: 960px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer:first-child {
+        padding-right: 15px;
+    }
+
+    .benifits-section .container .row .benifit-card-outer:last-child {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .benifits-section {
+        width: 750px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .benifits-section .container .row {
+        flex-wrap: wrap !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer {
+        width: 100%;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-img-large img {
+        max-width: 300px;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large {
+        margin-top: 3px;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large {
+        min-height: 413px !important;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .benifits-section .container .row .benifit-card-outer .benifit-card {
+        padding: 16px !important;
+        height: 284px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer:last-child .benifit-card {
+        flex-direction: row-reverse !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer:last-child .benifit-card .card-img img {
+        max-width: 175px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer:first-child .benifit-card .card-img {
+        display: flex !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer .benifit-card .card-img {
+        max-width: 160px !important;
+        min-height: 150px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer:first-child .card-img img {
+        position: absolute;
+        right: 0;
+        top: 16px;
+        width: 100%;
+        max-width: 130px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer .benifit-card .card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-right: 60px;
+    }
+
+    .benifits-section .container .row .benifit-card-outer .benifit-card .card-content>h5 {
+        margin-bottom: 16px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer .benifit-card .card-content>h4 {
+        margin-top: 0 !important;
+        font-size: 20px !important;
+        font-weight: 500 !important;
+        line-height: 28px !important;
+        letter-spacing: -.33px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer .benifit-card .card-content>p {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        padding-right: 10px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large {
+        padding: 16px !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-img-large img {
+        min-width: 115px !important;
+        max-width: 250px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large {
+        min-height: 260px !important;
+        justify-content: space-between !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-content-large {
+        padding: 0 !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-content-large>h5 {
+        margin-bottom: 16px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-content-large>h4 {
+        margin-top: 0 !important;
+        font-size: 20px !important;
+        font-weight: 500 !important;
+        line-height: 28px !important;
+        letter-spacing: -.33px !important;
+    }
+
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-content-large>p {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        padding-right: 10px !important;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-img-large img {
+        max-width: 115px !important;
+    }
+}
+
+.benifits-section {
+    margin: 0 auto;
+    padding-top: calc(96px + 84 * ((100vw - 576px) / 1344));
+    padding-bottom: calc(48px + 42 * ((100vw - 576px) / 1344));
+}
+
+.benifits-section .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.benifits-section .container .row {
+    display: flex;
+}
+
+.benifits-section .container .row .benifit-card-outer {
+    margin-bottom: 30px;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card.bg-light-orange {
+    background-color: #ffeacf;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card.bg-dark-orange {
+    background-color: #ff9c7f;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 32px;
+    height: 85%;
+    position: relative;
+    overflow: hidden;
+    padding-right: 0;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card .card-img {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card .card-img img {
+    max-width: 250px;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card.bg-dark-orange .card-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card .card-content {
+    padding-right: 32px;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card .card-content>h5 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -.09px;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card .card-content>h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 6px 0 16px;
+    padding-right: 10px;
+    color: #000;
+    letter-spacing: -.69px;
+}
+
+.benifits-section .container .row .benifit-card-outer .benifit-card .card-content>p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 10px
+}
+
+.benifits-section .container .row .benifit-card-outer-large {
+    width: 100%;
+}
+
+.benifits-section .container .row .benifit-card-outer-large .benifit-card-large {
+    background-color: #7acece;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    padding-right: 0;
+    padding-bottom: 0;
+    align-items: flex-end;
+}
+
+.benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-content-large {
+    max-width: 356px;
+    margin-top: auto;
+    padding-bottom: 32px;
+}
+
+.benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-content-large>h5 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -.09px;
+}
+
+.benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-content-large>h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 6px 0 16px;
+    padding-right: 10px;
+    color: #000;
+    letter-spacing: -.69px;
+}
+
+.benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-content-large>p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 10px
+}
+
+.benifits-section .container .row .benifit-card-outer-large .benifit-card-large .card-img-large img {
+    vertical-align: bottom;
+}
+
+.benifits-section .container .button {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.benifits-section .container .button .btn-design {
+    background: #41246e;
+    border-radius: 40px;
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 155px;
+    line-height: 20px;
+    color: #fff;
     letter-spacing: -.09px;
 }
