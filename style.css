@@ -1539,3 +1539,217 @@ main.upstox-design-base :not(i) {
     color: #fff;
     letter-spacing: -.09px;
 }
+
+
+/* -------------------------------------------------------------------------------------------------------
+                                              Benifits Section 
+--------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .language-sec .container {
+        max-width: 725px !important;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage {
+        width: 1080px !important;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage .language-item {
+        width: 360px !important;
+    }
+
+    .language-sec .language-crousel .language-nav{
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .language-sec .container {
+        max-width: 930px !important;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage {
+        width: 930px !important;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage .language-item {
+        width: 310px !important;
+    }
+}
+
+@media (max-width:768px) {
+
+    .language-sec .language-crousel {
+        overflow: hidden !important;
+    }
+
+    .common_section_heading .container .section_heading .heading-text {
+        text-align: left !important;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage {
+        width: 300% !important;
+        transition: ease 0.5s;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage .language-item {
+        padding: 0 25px;
+        width: 100%;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger {
+        padding: 16px !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        height: 100% !important;
+        flex-direction: column;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger .card-title {
+        font-size: 20px !important;
+        line-height: 28px !important;
+        font-weight: 500 !important;
+        margin-bottom: 16px !important;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger p {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 28px;
+        letter-spacing: -.09px;
+        color: #262626;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger img {
+        width: 9.42px;
+        height: 16px;
+        margin: 0 auto;
+    }
+
+    .language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger .arrow-img {
+        position: relative !important;
+        left: unset !important;
+        bottom: unset !important;
+        margin-top: auto !important;
+    }
+}
+
+.language-sec {
+    padding: calc(48px + 42 * ((100vw - 576px) / 1344)) 0;
+}
+
+.language-sec .container {
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+
+}
+
+.common_section_heading .container .section_heading .heading-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 15px;
+    color: #000;
+    letter-spacing: -.33px;
+}
+
+.language-sec .language-crousel {
+    overflow: scroll;
+}
+
+.language-sec .language-crousel::-webkit-scrollbar {
+    display: none;
+}
+
+.language-sec .language-crousel .language-outer .language-stage {
+    display: flex;
+    width: 300%;
+}
+
+.language-sec .language-crousel .language-outer .language-stage .language-item {
+    width: 100%;
+    height: 100%;
+}
+
+.language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger {
+    background-color: #edeae6;
+    cursor: pointer;
+    padding: 32px 24px 24px;
+    margin-right: 12px;
+    margin-left: 0;
+    position: relative;
+    height: 310px;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+
+.language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger .sub-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -.09px;
+    color: #5a298b;
+    margin-bottom: 16px;
+}
+
+.language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger .card-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #262626;
+    letter-spacing: -.47px;
+    margin-bottom: 16px;
+}
+
+.language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger p {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: -.09px;
+    color: #262626;
+}
+
+.language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger img {
+    width: 9.42px;
+    height: 16px;
+    margin: 0 auto;
+}
+
+.language-sec .language-crousel .language-outer .language-stage .language-item .cstm-yt-trigger .arrow-img {
+    border: 2px solid #000;
+    position: absolute;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    align-items: center;
+    bottom: 24px;
+    left: 24px;
+}
+
+.language-sec .language-crousel .language-nav{
+    width: 98.5%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 75%;
+    left:5px;
+}
+
+.language-sec .language-crousel .language-nav button {
+    background-color: transparent;
+    border: none;
+    width: 28px;
+}
+
+.language-sec .language-crousel .language-nav .nav-prev {
+    opacity: .5;
+}
+
+.language-sec .language-crousel .language-nav img {
+    width: 100%;
+    cursor: pointer;
+} 
