@@ -1552,7 +1552,6 @@ main.upstox-design-base :not(i) {
 
     .language-sec .language-crousel .language-outer .language-stage {
         width: 1080px !important;
-        transform: translate3d(1080px, 0px, 0px);
     }
 
     .language-sec .language-crousel .language-outer .language-stage .language-item {
