@@ -204,3 +204,29 @@ function showSlides(n) {
     var postion_translate = slide.clientWidth
     slide.style.transform="translate3d(" + -((postion_translate/3)) * (now/100)+ "px, 0px, 0px)";
 }
+
+window.addEventListener("resize", myFunction);
+function myFunction() {
+    now = 0
+    var next_button = document.querySelector(".nav-next")
+    var prev_button = document.querySelector(".nav-prev")
+    if(now == 200) {
+        next_button.disabled = true
+        next_button.style.opacity = ".5";
+    }
+    else {
+        next_button.disabled = false
+        next_button.style.opacity = "1";
+    }
+
+    if(now == 0) {
+        prev_button.disabled = true
+        prev_button.style.opacity = ".5";
+    }
+    else {
+        prev_button.disabled = false
+        prev_button.style.opacity = "1";
+    }
+    let slide = document.querySelector(".language-stage")
+    slide.style.transform="translate3d(0px, 0px, 0px)";
+}
